@@ -1,0 +1,1468 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ЗаписатьИЗакрыть" id="75">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ЗаписатьИЗакрытьExtendedTooltip" id="123"/>
+			</Button>
+			<Button name="Отмена" id="76">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="124"/>
+			</Button>
+			<Button name="Справка" id="4">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="125"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer" callType="After">ГСД_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа" id="5">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="126"/>
+			<ChildItems>
+				<Page name="Главное" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Главное</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГлавноеРасширеннаяПодсказка" id="127"/>
+					<ChildItems>
+						<UsualGroup name="Группа6" id="180">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="181"/>
+							<ChildItems>
+								<UsualGroup name="Группа7" id="65">
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7ExtendedTooltip" id="131"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьСведенияОПользователе" id="187">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Учетная запись:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НадписьСведенияОПользователеКонтекстноеМеню" id="188"/>
+											<ExtendedTooltip name="НадписьСведенияОПользователеРасширеннаяПодсказка" id="189"/>
+										</LabelDecoration>
+										<Button name="СведенияОПользователе" id="68">
+											<Type>Hyperlink</Type>
+											<SkipOnInput>false</SkipOnInput>
+											<CommandName>0</CommandName>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ExtendedTooltip name="СведенияОПользователеExtendedTooltip" id="132">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ввести контактную информацию, посмотреть параметры для входа в программу и права доступа, сменить пароль.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРабочаяДата" id="190">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рабочая дата</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаРабочаяДатаExtendedTooltip" id="191"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаНастройкиРабочейДаты" id="192">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки рабочей даты</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНастройкиРабочейДатыExtendedTooltip" id="193"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаРабочаяДатаОтступ" id="194">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Рабочая дата отступ</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРабочаяДатаОтступExtendedTooltip" id="195"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияТекущаяДата" id="196">
+													<ContextMenu name="ДекорацияТекущаяДатаКонтекстноеМеню" id="197"/>
+													<ExtendedTooltip name="ДекорацияТекущаяДатаExtendedTooltip" id="198"/>
+												</LabelDecoration>
+												<RadioButtonField name="ИспользоватьТекущуюДатуКомпьютера" id="199">
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Текущая дата компьютера</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ИспользоватьТекущуюДатуКомпьютераКонтекстноеМеню" id="200"/>
+													<ExtendedTooltip name="ИспользоватьТекущуюДатуКомпьютераExtendedTooltip" id="201"/>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаДругоеЗначение" id="202">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Другое значение</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДругоеЗначениеExtendedTooltip" id="203"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияРабочаяДата" id="204">
+													<ContextMenu name="ДекорацияРабочаяДатаКонтекстноеМеню" id="205"/>
+													<ExtendedTooltip name="ДекорацияРабочаяДатаExtendedTooltip" id="206"/>
+												</LabelDecoration>
+												<RadioButtonField name="ИспользоватьЗначение" id="207">
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Другая дата:</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ИспользоватьЗначениеКонтекстноеМеню" id="208"/>
+													<ExtendedTooltip name="ИспользоватьЗначениеExtendedTooltip" id="209"/>
+												</RadioButtonField>
+												<InputField name="ЗначениеРабочейДаты" id="210">
+													<TitleLocation>None</TitleLocation>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ContextMenu name="ЗначениеРабочейДатыКонтекстноеМеню" id="211"/>
+													<ExtendedTooltip name="ЗначениеРабочейДатыExtendedTooltip" id="212">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Используется при создании новых документов для установки их даты</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗапускИЗавершениеРаботы" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запуск и завершение работы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЗапускИЗавершениеРаботыРасширеннаяПодсказка" id="143"/>
+							<ChildItems>
+								<CheckBoxField name="ЗапрашиватьПодтверждениеПриЗавершенииПрограммы" id="87">
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапрашиватьПодтверждениеПриЗавершенииПрограммыКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ЗапрашиватьПодтверждениеПриЗавершенииПрограммыExtendedTooltip" id="145"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУстановитьРасширениеРаботыСФайламиНаКлиенте" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Работа в веб-клиенте</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаУстановитьРасширениеРаботыСФайламиНаКлиентеРасширеннаяПодсказка" id="137"/>
+							<ChildItems>
+								<Pages name="ГруппаСтраницы" id="213">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="214"/>
+									<ChildItems>
+										<Page name="ГруппаРасширениеРаботыСФайламиНеУстановлено" id="215">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расширение работы с файлами не установлено</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ГруппаРасширениеРаботыСФайламиНеУстановленоРасширеннаяПодсказка" id="216"/>
+											<ChildItems>
+												<CheckBoxField name="НапоминатьОбУстановкеРасширенияРаботыСФайлами" id="175">
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="НапоминатьОбУстановкеРасширенияРаботыСФайламиКонтекстноеМеню" id="176"/>
+													<ExtendedTooltip name="НапоминатьОбУстановкеРасширенияРаботыСФайламиРасширеннаяПодсказка" id="177"/>
+												</CheckBoxField>
+												<Button name="УстановитьРасширениеРаботыСФайламиНаКлиенте" id="17">
+													<Type>UsualButton</Type>
+													<SkipOnInput>false</SkipOnInput>
+													<CommandName>0</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Установить сейчас</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ExtendedTooltip name="УстановитьРасширениеРаботыСФайламиНаКлиентеExtendedTooltip" id="138">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Для выполнения некоторых действий в программе при работе в веб-клиенте
+может потребоваться установить расширение для веб-клиента 1С:Предприятие на данном компьютере.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаРасширениеРаботыСФайламиУстановлено" id="217">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расширение работы с файлами установлено</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ГруппаРасширениеРаботыСФайламиУстановленоРасширеннаяПодсказка" id="218"/>
+											<ChildItems>
+												<LabelDecoration name="РасширениеРаботыСФайламиУстановлено" id="219">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расширение для веб-клиента 1С:Предприятие установлено.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="РасширениеРаботыСФайламиУстановленоКонтекстноеМеню" id="220"/>
+													<ExtendedTooltip name="РасширениеРаботыСФайламиУстановленоРасширеннаяПодсказка" id="221"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа8" id="72">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доступ к внешним ресурсам</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="Группа8ExtendedTooltip" id="134"/>
+							<ChildItems>
+								<Button name="ПерсональнаяНастройкаПроксиСервера" id="71">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ПерсональнаяНастройкаПроксиСервераExtendedTooltip" id="135"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ИнтеграцияРекрутинговыхСайтов" id="231">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Интеграция с рекрутинговыми сайтами</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ИнтеграцияРекрутинговыхСайтовРасширеннаяПодсказка" id="232"/>
+							<ChildItems>
+								<Button name="ПерсональнаяНастройкаДоступаКРекрутинговымСайтам" id="233">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ПерсональнаяНастройкаДоступаКРекрутинговымСайтамРасширеннаяПодсказка" id="234"/>
+								</Button>
+								<Button name="НастроитьРаботуРасширенияБраузера" id="254">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="НастроитьРаботуРасширенияБраузераРасширеннаяПодсказка" id="255"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа9" id="77">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа9ExtendedTooltip" id="140"/>
+							<ChildItems>
+								<Button name="ОбновитьПараметрыСистемы" id="78">
+									<Type>UsualButton</Type>
+									<CommandName>0</CommandName>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ExtendedTooltip name="ОбновитьПараметрыСистемыExtendedTooltip" id="141">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обновить командный интерфейс, рабочий стол и открытые формы
+с учетом текущих значений настроек программы.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСменаПодписи" id="239">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Смена подписи</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаСменаПодписиРасширеннаяПодсказка" id="240"/>
+							<ChildItems>
+								<Button name="ПерсональнаяНастройкаСменаПодписи" id="244">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ПерсональнаяНастройкаСменаПодписиРасширеннаяПодсказка" id="245"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ИспользованиеЭЦПГруппа" id="250">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использование ЭЦП</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ИспользованиеЭЦПГруппаРасширеннаяПодсказка" id="251"/>
+							<ChildItems>
+								<Button name="ПерсональнаяНастройкаПодписанияЦифровымиПодписями" id="252">
+									<Type>Hyperlink</Type>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ПерсональнаяНастройкаПодписанияЦифровымиПодписямиРасширеннаяПодсказка" id="253"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Печать" id="8">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ПечатьExtendedTooltip" id="146"/>
+							<ChildItems>
+								<Button name="ЗадатьДействиеПриВыбореМакетаПечатнойФормы" id="70">
+									<Type>Hyperlink</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ЗадатьДействиеПриВыбореМакетаПечатнойФормыExtendedTooltip" id="151"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СинхронизацияКалендарей" id="235">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Синхронизация календарей</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="СинхронизацияКалендарейРасширеннаяПодсказка" id="236"/>
+							<ChildItems>
+								<Button name="ОбщаяКомандаНастройкаСинхронизацииКалендарей" id="237">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ОбщаяКомандаНастройкаСинхронизацииКалендарейРасширеннаяПодсказка" id="238"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СинхронизацияMSExchange" id="256">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Синхронизация с Microsoft Exchange</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="СинхронизацияMSExchangeРасширеннаяПодсказка" id="257"/>
+							<ChildItems>
+								<Button name="ОбщаяКомандаНастройкаСинхронизацииMSExchange" id="258">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ОбщаяКомандаНастройкаСинхронизацииMSExchangeРасширеннаяПодсказка" id="259"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="РазборРезюме" id="246">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разбор резюме</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="РазборРезюмеРасширеннаяПодсказка" id="247"/>
+							<ChildItems>
+								<Button name="ПерсональнаяНастройкаРазборРезюме" id="248">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ПерсональнаяНастройкаРазборРезюмеРасширеннаяПодсказка" id="249"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="РаботаСФайлами" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работа с файлами</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="РаботаСФайламиExtendedTooltip" id="152"/>
+					<ChildItems>
+						<UsualGroup name="Группа5" id="62">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5ExtendedTooltip" id="156"/>
+							<ChildItems>
+								<InputField name="ДействиеПоДвойномуЩелчкуМыши" id="9">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действие при выборе файла</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ДействиеПоДвойномуЩелчкуМышиКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ДействиеПоДвойномуЩелчкуМышиExtendedTooltip" id="157"/>
+								</InputField>
+								<CheckBoxField name="СпрашиватьРежимРедактированияПриОткрытииФайла" id="13">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбор режима открытия при выборе файла</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СпрашиватьРежимРедактированияПриОткрытииФайлаКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="СпрашиватьРежимРедактированияПриОткрытииФайлаExtendedTooltip" id="158"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПоказыватьПодсказкиПриРедактированииФайлов" id="11">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Показывать подсказки при редактировании файлов (только веб клиент)</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоказыватьПодсказкиПриРедактированииФайловКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="ПоказыватьПодсказкиПриРедактированииФайловExtendedTooltip" id="159"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПоказыватьЗанятыеФайлыПриЗавершенииРаботы" id="42">
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоказыватьЗанятыеФайлыПриЗавершенииРаботыКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ПоказыватьЗанятыеФайлыПриЗавершенииРаботыExtendedTooltip" id="160"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПоказыватьКолонкуРазмер" id="44">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Показывать колонку "Размер" в списках файлов</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Показывать в списках файлов колонку "Размер текущей версии"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоказыватьКолонкуРазмерКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ПоказыватьКолонкуРазмерExtendedTooltip" id="161"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПоказыватьИнформациюЧтоФайлНеБылИзменен" id="94">
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоказыватьИнформациюЧтоФайлНеБылИзмененКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ПоказыватьИнформациюЧтоФайлНеБылИзмененExtendedTooltip" id="162"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа12" id="182">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="183"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСравнение" id="48">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сравнение</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСравнениеExtendedTooltip" id="163"/>
+									<ChildItems>
+										<InputField name="СпособСравненияВерсийФайлов" id="34">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сравнивать версии при помощи</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СпособСравненияВерсийФайловКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="СпособСравненияВерсийФайловExtendedTooltip" id="164"/>
+										</InputField>
+										<LabelDecoration name="ДекорацияТипыФайлов" id="49">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<SkipOnInput>false</SkipOnInput>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>(ODT, DOC, RTF, TXT)</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияТипыФайловКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="ДекорацияТипыФайловExtendedTooltip" id="165"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="НастройкиОткрытияФайлов" id="114">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<HeightInTableRows>1</HeightInTableRows>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки открытия файлов</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="НастройкиОткрытияФайловКонтекстноеМеню" id="115"/>
+									<AutoCommandBar name="НастройкиОткрытияФайловКоманднаяПанель" id="116">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="НастройкиОткрытияФайловExtendedTooltip" id="166"/>
+									<SearchStringAddition name="НастройкиОткрытияФайловСтрокаПоиска" id="222">
+										<AdditionSource>
+											<Item>НастройкиОткрытияФайлов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкиОткрытияФайловСтрокаПоискаКонтекстноеМеню" id="223"/>
+										<ExtendedTooltip name="НастройкиОткрытияФайловСтрокаПоискаРасширеннаяПодсказка" id="224"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="НастройкиОткрытияФайловСостояниеПросмотра" id="225">
+										<AdditionSource>
+											<Item>НастройкиОткрытияФайлов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкиОткрытияФайловСостояниеПросмотраКонтекстноеМеню" id="226"/>
+										<ExtendedTooltip name="НастройкиОткрытияФайловСостояниеПросмотраРасширеннаяПодсказка" id="227"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="НастройкиОткрытияФайловУправлениеПоиском" id="228">
+										<AdditionSource>
+											<Item>НастройкиОткрытияФайлов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкиОткрытияФайловУправлениеПоискомКонтекстноеМеню" id="229"/>
+										<ExtendedTooltip name="НастройкиОткрытияФайловУправлениеПоискомРасширеннаяПодсказка" id="230"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="НастройкиОткрытияФайловТипФайла" id="117">
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкиОткрытияФайловТипФайлаКонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="НастройкиОткрытияФайловТипФайлаExtendedTooltip" id="167"/>
+										</InputField>
+										<InputField name="НастройкиОткрытияФайловРасширение" id="119">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкиОткрытияФайловРасширениеКонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="НастройкиОткрытияФайловРасширениеExtendedTooltip" id="168"/>
+										</InputField>
+										<InputField name="НастройкиОткрытияФайловСпособОткрытия" id="121">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкиОткрытияФайловСпособОткрытияКонтекстноеМеню" id="122"/>
+											<ExtendedTooltip name="НастройкиОткрытияФайловСпособОткрытияExtendedTooltip" id="169"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Команды" id="15">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команды</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КомандыExtendedTooltip" id="170"/>
+							<ChildItems>
+								<Button name="НастройкаРабочегоКаталога" id="16">
+									<Type>Hyperlink</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="НастройкаРабочегоКаталогаExtendedTooltip" id="171"/>
+								</Button>
+								<Button name="НастройкаСканирования" id="51">
+									<Type>Hyperlink</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="НастройкаСканированияExtendedTooltip" id="172"/>
+								</Button>
+								<Button name="НастройкаЭП" id="73">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="НастройкаЭПРасширеннаяПодсказка" id="173"/>
+								</Button>
+								<Button name="УстановитьРасширениеРаботыСКриптографией" id="74">
+									<Type>UsualButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="УстановитьРасширениеРаботыСКриптографиейExtendedTooltip" id="174"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.18">
+		<VerticalScroll>useIfNecessary</VerticalScroll>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+			<ChildItems>
+				<Button name="ЗаписатьИЗакрыть" id="75">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ЗаписатьИЗакрытьExtendedTooltip" id="123"/>
+				</Button>
+				<Button name="Отмена" id="76">
+					<Type>CommandBarButton</Type>
+					<Visible>false</Visible>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ОтменаExtendedTooltip" id="124"/>
+				</Button>
+				<Button name="Справка" id="4">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="СправкаExtendedTooltip" id="125"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<Pages name="Группа" id="5">
+				<PagesRepresentation>TabsOnTop</PagesRepresentation>
+				<ExtendedTooltip name="ГруппаExtendedTooltip" id="126"/>
+				<ChildItems>
+					<Page name="Главное" id="53">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Главное</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГлавноеРасширеннаяПодсказка" id="127"/>
+						<ChildItems>
+							<UsualGroup name="Группа6" id="180">
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="181"/>
+								<ChildItems>
+									<UsualGroup name="Группа7" id="65">
+										<Group>Horizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="Группа7ExtendedTooltip" id="131"/>
+										<ChildItems>
+											<LabelDecoration name="НадписьСведенияОПользователе" id="187">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Учетная запись:</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="НадписьСведенияОПользователеКонтекстноеМеню" id="188"/>
+												<ExtendedTooltip name="НадписьСведенияОПользователеРасширеннаяПодсказка" id="189"/>
+											</LabelDecoration>
+											<Button name="СведенияОПользователе" id="68">
+												<Type>Hyperlink</Type>
+												<SkipOnInput>false</SkipOnInput>
+												<CommandName>0</CommandName>
+												<ToolTipRepresentation>Button</ToolTipRepresentation>
+												<ExtendedTooltip name="СведенияОПользователеExtendedTooltip" id="132">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ввести контактную информацию, посмотреть параметры для входа в программу и права доступа, сменить пароль.</v8:content>
+														</v8:item>
+													</Title>
+												</ExtendedTooltip>
+											</Button>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаРабочаяДата" id="190">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Рабочая дата</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ExtendedTooltip name="ГруппаРабочаяДатаExtendedTooltip" id="191"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаНастройкиРабочейДаты" id="192">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройки рабочей даты</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаНастройкиРабочейДатыExtendedTooltip" id="193"/>
+										<ChildItems>
+											<UsualGroup name="ГруппаРабочаяДатаОтступ" id="194">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Рабочая дата отступ</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<Behavior>Usual</Behavior>
+												<Representation>None</Representation>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="ГруппаРабочаяДатаОтступExtendedTooltip" id="195"/>
+												<ChildItems>
+													<LabelDecoration name="ДекорацияТекущаяДата" id="196">
+														<ContextMenu name="ДекорацияТекущаяДатаКонтекстноеМеню" id="197"/>
+														<ExtendedTooltip name="ДекорацияТекущаяДатаExtendedTooltip" id="198"/>
+													</LabelDecoration>
+													<RadioButtonField name="ИспользоватьТекущуюДатуКомпьютера" id="199">
+														<TitleLocation>None</TitleLocation>
+														<RadioButtonType>Auto</RadioButtonType>
+														<ChoiceList>
+															<xr:Item>
+																<xr:Presentation/>
+																<xr:CheckState>0</xr:CheckState>
+																<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																	<Presentation>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текущая дата компьютера</v8:content>
+																		</v8:item>
+																	</Presentation>
+																	<Value xsi:type="xs:decimal">1</Value>
+																</xr:Value>
+															</xr:Item>
+														</ChoiceList>
+														<ContextMenu name="ИспользоватьТекущуюДатуКомпьютераКонтекстноеМеню" id="200"/>
+														<ExtendedTooltip name="ИспользоватьТекущуюДатуКомпьютераExtendedTooltip" id="201"/>
+													</RadioButtonField>
+												</ChildItems>
+											</UsualGroup>
+											<UsualGroup name="ГруппаДругоеЗначение" id="202">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Другое значение</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<Behavior>Usual</Behavior>
+												<Representation>None</Representation>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="ГруппаДругоеЗначениеExtendedTooltip" id="203"/>
+												<ChildItems>
+													<LabelDecoration name="ДекорацияРабочаяДата" id="204">
+														<ContextMenu name="ДекорацияРабочаяДатаКонтекстноеМеню" id="205"/>
+														<ExtendedTooltip name="ДекорацияРабочаяДатаExtendedTooltip" id="206"/>
+													</LabelDecoration>
+													<RadioButtonField name="ИспользоватьЗначение" id="207">
+														<TitleLocation>None</TitleLocation>
+														<RadioButtonType>Auto</RadioButtonType>
+														<ChoiceList>
+															<xr:Item>
+																<xr:Presentation/>
+																<xr:CheckState>0</xr:CheckState>
+																<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																	<Presentation>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Другая дата:</v8:content>
+																		</v8:item>
+																	</Presentation>
+																	<Value xsi:type="xs:decimal">0</Value>
+																</xr:Value>
+															</xr:Item>
+														</ChoiceList>
+														<ContextMenu name="ИспользоватьЗначениеКонтекстноеМеню" id="208"/>
+														<ExtendedTooltip name="ИспользоватьЗначениеExtendedTooltip" id="209"/>
+													</RadioButtonField>
+													<InputField name="ЗначениеРабочейДаты" id="210">
+														<TitleLocation>None</TitleLocation>
+														<ToolTipRepresentation>Button</ToolTipRepresentation>
+														<ContextMenu name="ЗначениеРабочейДатыКонтекстноеМеню" id="211"/>
+														<ExtendedTooltip name="ЗначениеРабочейДатыExtendedTooltip" id="212">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Используется при создании новых документов для установки их даты</v8:content>
+																</v8:item>
+															</Title>
+														</ExtendedTooltip>
+													</InputField>
+												</ChildItems>
+											</UsualGroup>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаЗапускИЗавершениеРаботы" id="83">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Запуск и завершение работы</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ExtendedTooltip name="ГруппаЗапускИЗавершениеРаботыРасширеннаяПодсказка" id="143"/>
+								<ChildItems>
+									<CheckBoxField name="ЗапрашиватьПодтверждениеПриЗавершенииПрограммы" id="87">
+										<TitleLocation>Right</TitleLocation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ЗапрашиватьПодтверждениеПриЗавершенииПрограммыКонтекстноеМеню" id="88"/>
+										<ExtendedTooltip name="ЗапрашиватьПодтверждениеПриЗавершенииПрограммыExtendedTooltip" id="145"/>
+									</CheckBoxField>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаУстановитьРасширениеРаботыСФайламиНаКлиенте" id="64">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Работа в веб-клиенте</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ExtendedTooltip name="ГруппаУстановитьРасширениеРаботыСФайламиНаКлиентеРасширеннаяПодсказка" id="137"/>
+								<ChildItems>
+									<Pages name="ГруппаСтраницы" id="213">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Страницы</v8:content>
+											</v8:item>
+										</Title>
+										<PagesRepresentation>None</PagesRepresentation>
+										<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="214"/>
+										<ChildItems>
+											<Page name="ГруппаРасширениеРаботыСФайламиНеУстановлено" id="215">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Расширение работы с файлами не установлено</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<ExtendedTooltip name="ГруппаРасширениеРаботыСФайламиНеУстановленоРасширеннаяПодсказка" id="216"/>
+												<ChildItems>
+													<CheckBoxField name="НапоминатьОбУстановкеРасширенияРаботыСФайлами" id="175">
+														<TitleLocation>Right</TitleLocation>
+														<CheckBoxType>Auto</CheckBoxType>
+														<ContextMenu name="НапоминатьОбУстановкеРасширенияРаботыСФайламиКонтекстноеМеню" id="176"/>
+														<ExtendedTooltip name="НапоминатьОбУстановкеРасширенияРаботыСФайламиРасширеннаяПодсказка" id="177"/>
+													</CheckBoxField>
+													<Button name="УстановитьРасширениеРаботыСФайламиНаКлиенте" id="17">
+														<Type>UsualButton</Type>
+														<SkipOnInput>false</SkipOnInput>
+														<CommandName>0</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Установить сейчас</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTipRepresentation>Button</ToolTipRepresentation>
+														<ExtendedTooltip name="УстановитьРасширениеРаботыСФайламиНаКлиентеExtendedTooltip" id="138">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Для выполнения некоторых действий в программе при работе в веб-клиенте
+может потребоваться установить расширение для веб-клиента 1С:Предприятие на данном компьютере.</v8:content>
+																</v8:item>
+															</Title>
+														</ExtendedTooltip>
+													</Button>
+												</ChildItems>
+											</Page>
+											<Page name="ГруппаРасширениеРаботыСФайламиУстановлено" id="217">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Расширение работы с файлами установлено</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ГруппаРасширениеРаботыСФайламиУстановленоРасширеннаяПодсказка" id="218"/>
+												<ChildItems>
+													<LabelDecoration name="РасширениеРаботыСФайламиУстановлено" id="219">
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Расширение для веб-клиента 1С:Предприятие установлено.</v8:content>
+															</v8:item>
+														</Title>
+														<ContextMenu name="РасширениеРаботыСФайламиУстановленоКонтекстноеМеню" id="220"/>
+														<ExtendedTooltip name="РасширениеРаботыСФайламиУстановленоРасширеннаяПодсказка" id="221"/>
+													</LabelDecoration>
+												</ChildItems>
+											</Page>
+										</ChildItems>
+									</Pages>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="Группа8" id="72">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Доступ к внешним ресурсам</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ExtendedTooltip name="Группа8ExtendedTooltip" id="134"/>
+								<ChildItems>
+									<Button name="ПерсональнаяНастройкаПроксиСервера" id="71">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ПерсональнаяНастройкаПроксиСервераExtendedTooltip" id="135"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ИнтеграцияРекрутинговыхСайтов" id="231">
+								<Visible>false</Visible>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Интеграция с рекрутинговыми сайтами</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<ExtendedTooltip name="ИнтеграцияРекрутинговыхСайтовРасширеннаяПодсказка" id="232"/>
+								<ChildItems>
+									<Button name="ПерсональнаяНастройкаДоступаКРекрутинговымСайтам" id="233">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ПерсональнаяНастройкаДоступаКРекрутинговымСайтамРасширеннаяПодсказка" id="234"/>
+									</Button>
+									<Button name="НастроитьРаботуРасширенияБраузера" id="254">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="НастроитьРаботуРасширенияБраузераРасширеннаяПодсказка" id="255"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="Группа9" id="77">
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="Группа9ExtendedTooltip" id="140"/>
+								<ChildItems>
+									<Button name="ОбновитьПараметрыСистемы" id="78">
+										<Type>UsualButton</Type>
+										<CommandName>0</CommandName>
+										<ToolTipRepresentation>Button</ToolTipRepresentation>
+										<ExtendedTooltip name="ОбновитьПараметрыСистемыExtendedTooltip" id="141">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обновить командный интерфейс, рабочий стол и открытые формы
+с учетом текущих значений настроек программы.</v8:content>
+												</v8:item>
+											</Title>
+										</ExtendedTooltip>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаСменаПодписи" id="239">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Смена подписи</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<ExtendedTooltip name="ГруппаСменаПодписиРасширеннаяПодсказка" id="240"/>
+								<ChildItems>
+									<Button name="ПерсональнаяНастройкаСменаПодписи" id="244">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ПерсональнаяНастройкаСменаПодписиРасширеннаяПодсказка" id="245"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ИспользованиеЭЦПГруппа" id="250">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Использование ЭЦП</v8:content>
+									</v8:item>
+								</Title>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ИспользованиеЭЦПГруппаРасширеннаяПодсказка" id="251"/>
+								<ChildItems>
+									<Button name="ПерсональнаяНастройкаПодписанияЦифровымиПодписями" id="252">
+										<Type>Hyperlink</Type>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ПерсональнаяНастройкаПодписанияЦифровымиПодписямиРасширеннаяПодсказка" id="253"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="Печать" id="8">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Печать</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<ExtendedTooltip name="ПечатьExtendedTooltip" id="146"/>
+								<ChildItems>
+									<Button name="ЗадатьДействиеПриВыбореМакетаПечатнойФормы" id="70">
+										<Type>Hyperlink</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ЗадатьДействиеПриВыбореМакетаПечатнойФормыExtendedTooltip" id="151"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="СинхронизацияКалендарей" id="235">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Синхронизация календарей</v8:content>
+									</v8:item>
+								</Title>
+								<Behavior>Usual</Behavior>
+								<ExtendedTooltip name="СинхронизацияКалендарейРасширеннаяПодсказка" id="236"/>
+								<ChildItems>
+									<Button name="ОбщаяКомандаНастройкаСинхронизацииКалендарей" id="237">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ОбщаяКомандаНастройкаСинхронизацииКалендарейРасширеннаяПодсказка" id="238"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="СинхронизацияMSExchange" id="256">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Синхронизация с Microsoft Exchange</v8:content>
+									</v8:item>
+								</Title>
+								<Behavior>Usual</Behavior>
+								<ExtendedTooltip name="СинхронизацияMSExchangeРасширеннаяПодсказка" id="257"/>
+								<ChildItems>
+									<Button name="ОбщаяКомандаНастройкаСинхронизацииMSExchange" id="258">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ОбщаяКомандаНастройкаСинхронизацииMSExchangeРасширеннаяПодсказка" id="259"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="РазборРезюме" id="246">
+								<Visible>false</Visible>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Разбор резюме</v8:content>
+									</v8:item>
+								</Title>
+								<Behavior>Usual</Behavior>
+								<ExtendedTooltip name="РазборРезюмеРасширеннаяПодсказка" id="247"/>
+								<ChildItems>
+									<Button name="ПерсональнаяНастройкаРазборРезюме" id="248">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ПерсональнаяНастройкаРазборРезюмеРасширеннаяПодсказка" id="249"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+					<Page name="РаботаСФайлами" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Работа с файлами</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="РаботаСФайламиExtendedTooltip" id="152"/>
+						<ChildItems>
+							<UsualGroup name="Группа5" id="62">
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="Группа5ExtendedTooltip" id="156"/>
+								<ChildItems>
+									<InputField name="ДействиеПоДвойномуЩелчкуМыши" id="9">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Действие при выборе файла</v8:content>
+											</v8:item>
+										</Title>
+										<HorizontalStretch>false</HorizontalStretch>
+										<ContextMenu name="ДействиеПоДвойномуЩелчкуМышиКонтекстноеМеню" id="10"/>
+										<ExtendedTooltip name="ДействиеПоДвойномуЩелчкуМышиExtendedTooltip" id="157"/>
+									</InputField>
+									<CheckBoxField name="СпрашиватьРежимРедактированияПриОткрытииФайла" id="13">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выбор режима открытия при выборе файла</v8:content>
+											</v8:item>
+										</Title>
+										<TitleLocation>Right</TitleLocation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="СпрашиватьРежимРедактированияПриОткрытииФайлаКонтекстноеМеню" id="14"/>
+										<ExtendedTooltip name="СпрашиватьРежимРедактированияПриОткрытииФайлаExtendedTooltip" id="158"/>
+									</CheckBoxField>
+									<CheckBoxField name="ПоказыватьПодсказкиПриРедактированииФайлов" id="11">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Показывать подсказки при редактировании файлов (только веб клиент)</v8:content>
+											</v8:item>
+										</Title>
+										<TitleLocation>Right</TitleLocation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ПоказыватьПодсказкиПриРедактированииФайловКонтекстноеМеню" id="12"/>
+										<ExtendedTooltip name="ПоказыватьПодсказкиПриРедактированииФайловExtendedTooltip" id="159"/>
+									</CheckBoxField>
+									<CheckBoxField name="ПоказыватьЗанятыеФайлыПриЗавершенииРаботы" id="42">
+										<TitleLocation>Right</TitleLocation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ПоказыватьЗанятыеФайлыПриЗавершенииРаботыКонтекстноеМеню" id="43"/>
+										<ExtendedTooltip name="ПоказыватьЗанятыеФайлыПриЗавершенииРаботыExtendedTooltip" id="160"/>
+									</CheckBoxField>
+									<CheckBoxField name="ПоказыватьКолонкуРазмер" id="44">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Показывать колонку "Размер" в списках файлов</v8:content>
+											</v8:item>
+										</Title>
+										<TitleLocation>Right</TitleLocation>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Показывать в списках файлов колонку "Размер текущей версии"</v8:content>
+											</v8:item>
+										</ToolTip>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ПоказыватьКолонкуРазмерКонтекстноеМеню" id="45"/>
+										<ExtendedTooltip name="ПоказыватьКолонкуРазмерExtendedTooltip" id="161"/>
+									</CheckBoxField>
+									<CheckBoxField name="ПоказыватьИнформациюЧтоФайлНеБылИзменен" id="94">
+										<TitleLocation>Right</TitleLocation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ПоказыватьИнформациюЧтоФайлНеБылИзмененКонтекстноеМеню" id="95"/>
+										<ExtendedTooltip name="ПоказыватьИнформациюЧтоФайлНеБылИзмененExtendedTooltip" id="162"/>
+									</CheckBoxField>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="Группа12" id="182">
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="183"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаСравнение" id="48">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сравнение</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Horizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаСравнениеExtendedTooltip" id="163"/>
+										<ChildItems>
+											<InputField name="СпособСравненияВерсийФайлов" id="34">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Сравнивать версии при помощи</v8:content>
+													</v8:item>
+												</Title>
+												<HorizontalStretch>false</HorizontalStretch>
+												<ContextMenu name="СпособСравненияВерсийФайловКонтекстноеМеню" id="35"/>
+												<ExtendedTooltip name="СпособСравненияВерсийФайловExtendedTooltip" id="164"/>
+											</InputField>
+											<LabelDecoration name="ДекорацияТипыФайлов" id="49">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<SkipOnInput>false</SkipOnInput>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>(ODT, DOC, RTF, TXT)</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ДекорацияТипыФайловКонтекстноеМеню" id="50"/>
+												<ExtendedTooltip name="ДекорацияТипыФайловExtendedTooltip" id="165"/>
+											</LabelDecoration>
+										</ChildItems>
+									</UsualGroup>
+									<Table name="НастройкиОткрытияФайлов" id="114">
+										<Representation>List</Representation>
+										<TitleLocation>Top</TitleLocation>
+										<ChangeRowSet>false</ChangeRowSet>
+										<ChangeRowOrder>false</ChangeRowOrder>
+										<HeightInTableRows>1</HeightInTableRows>
+										<AutoInsertNewRow>true</AutoInsertNewRow>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<FileDragMode>AsFile</FileDragMode>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройки открытия файлов</v8:content>
+											</v8:item>
+										</Title>
+										<SearchStringLocation>None</SearchStringLocation>
+										<ViewStatusLocation>None</ViewStatusLocation>
+										<SearchControlLocation>None</SearchControlLocation>
+										<RowFilter xsi:nil="true"/>
+										<ContextMenu name="НастройкиОткрытияФайловКонтекстноеМеню" id="115"/>
+										<AutoCommandBar name="НастройкиОткрытияФайловКоманднаяПанель" id="116">
+											<Autofill>false</Autofill>
+										</AutoCommandBar>
+										<ExtendedTooltip name="НастройкиОткрытияФайловExtendedTooltip" id="166"/>
+										<SearchStringAddition name="НастройкиОткрытияФайловСтрокаПоиска" id="222">
+											<AdditionSource>
+												<Item>НастройкиОткрытияФайлов</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="НастройкиОткрытияФайловСтрокаПоискаКонтекстноеМеню" id="223"/>
+											<ExtendedTooltip name="НастройкиОткрытияФайловСтрокаПоискаРасширеннаяПодсказка" id="224"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="НастройкиОткрытияФайловСостояниеПросмотра" id="225">
+											<AdditionSource>
+												<Item>НастройкиОткрытияФайлов</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="НастройкиОткрытияФайловСостояниеПросмотраКонтекстноеМеню" id="226"/>
+											<ExtendedTooltip name="НастройкиОткрытияФайловСостояниеПросмотраРасширеннаяПодсказка" id="227"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="НастройкиОткрытияФайловУправлениеПоиском" id="228">
+											<AdditionSource>
+												<Item>НастройкиОткрытияФайлов</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="НастройкиОткрытияФайловУправлениеПоискомКонтекстноеМеню" id="229"/>
+											<ExtendedTooltip name="НастройкиОткрытияФайловУправлениеПоискомРасширеннаяПодсказка" id="230"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="НастройкиОткрытияФайловТипФайла" id="117">
+												<ReadOnly>true</ReadOnly>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="НастройкиОткрытияФайловТипФайлаКонтекстноеМеню" id="118"/>
+												<ExtendedTooltip name="НастройкиОткрытияФайловТипФайлаExtendedTooltip" id="167"/>
+											</InputField>
+											<InputField name="НастройкиОткрытияФайловРасширение" id="119">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="НастройкиОткрытияФайловРасширениеКонтекстноеМеню" id="120"/>
+												<ExtendedTooltip name="НастройкиОткрытияФайловРасширениеExtendedTooltip" id="168"/>
+											</InputField>
+											<InputField name="НастройкиОткрытияФайловСпособОткрытия" id="121">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="НастройкиОткрытияФайловСпособОткрытияКонтекстноеМеню" id="122"/>
+												<ExtendedTooltip name="НастройкиОткрытияФайловСпособОткрытияExtendedTooltip" id="169"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="Команды" id="15">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Команды</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="КомандыExtendedTooltip" id="170"/>
+								<ChildItems>
+									<Button name="НастройкаРабочегоКаталога" id="16">
+										<Type>Hyperlink</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="НастройкаРабочегоКаталогаExtendedTooltip" id="171"/>
+									</Button>
+									<Button name="НастройкаСканирования" id="51">
+										<Type>Hyperlink</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="НастройкаСканированияExtendedTooltip" id="172"/>
+									</Button>
+									<Button name="НастройкаЭП" id="73">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="НастройкаЭПРасширеннаяПодсказка" id="173"/>
+									</Button>
+									<Button name="УстановитьРасширениеРаботыСКриптографией" id="74">
+										<Type>UsualButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="УстановитьРасширениеРаботыСКриптографиейExtendedTooltip" id="174"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+				</ChildItems>
+			</Pages>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>
