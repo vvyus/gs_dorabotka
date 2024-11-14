@@ -2,20 +2,20 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
 	<ConfigVersions>
 		<Metadata name="CommonForm.ПерсональныеНастройки" id="4870afff-3672-4002-af1b-8ea7ef05fe15" configVersion="0a5add1a228633ab029025eeb02f036faec27f41"/>
-		<Metadata name="CommonForm.ПерсональныеНастройки.Form" id="4870afff-3672-4002-af1b-8ea7ef05fe15.0" configVersion="d6b4d5a27b8e6bfb07622d13e3cf977eda357c09"/>
-		<Metadata name="CommonModule.Расчет_Клиент" id="1a75367d-dfec-4c9b-a031-b8a74e412d81" configVersion="927dea3ac3394bd462f6693c45c0444fc91cca0b"/>
-		<Metadata name="CommonModule.Расчет_Клиент.Module" id="1a75367d-dfec-4c9b-a031-b8a74e412d81.0" configVersion="d3e2e1f45ab379f7c535b8e308a41463451a5723"/>
-		<Metadata name="CommonModule.Расчет_Сервер" id="24e29e25-4cfd-4c06-b44e-c60f3979da48" configVersion="45d6f2d1fa0d8862784d2fe6279313ffa3b4543b"/>
-		<Metadata name="CommonModule.Расчет_Сервер.Module" id="24e29e25-4cfd-4c06-b44e-c60f3979da48.0" configVersion="d51b6b36c9848f96a8373b312f2ff9ec85273f6e"/>
-		<Metadata name="CommonModule.СотрудникиРасширенный" id="296faa41-b104-4fdb-8d8b-de67e24044df" configVersion="b04d1d422063a3338585266c87254db8018b03a1"/>
-		<Metadata name="CommonModule.СотрудникиРасширенный.Module" id="296faa41-b104-4fdb-8d8b-de67e24044df.0" configVersion="e07d5300d9bb9e893780d2927867b29904cf820c"/>
-		<Metadata name="Configuration.ГС_Доработки" id="4eb0891d-5045-4a43-89a7-2ffc93b9cbaf" configVersion="6d2776cab5350efa34cd0238390d3e6eea5d1b2c"/>
+		<Metadata name="CommonForm.ПерсональныеНастройки.Form" id="4870afff-3672-4002-af1b-8ea7ef05fe15.0" configVersion="5c98b9a0843c767628cf73571d081225a9f15fb1"/>
+		<Metadata name="CommonModule.ДоработкаФормыКлиент" id="1a75367d-dfec-4c9b-a031-b8a74e412d81" configVersion="495fd40851f4107bce5fa29df56075f0dbac36eb"/>
+		<Metadata name="CommonModule.ДоработкаФормыКлиент.Module" id="1a75367d-dfec-4c9b-a031-b8a74e412d81.0" configVersion="9acf64f33769a7da3999f8d53cc34bbbcfaecf6d"/>
+		<Metadata name="CommonModule.ДоработкаФормыСервер" id="24e29e25-4cfd-4c06-b44e-c60f3979da48" configVersion="89bf3795172440f05f3591181992991d69b48549"/>
+		<Metadata name="CommonModule.ДоработкаФормыСервер.Module" id="24e29e25-4cfd-4c06-b44e-c60f3979da48.0" configVersion="89f36fa0de9a2e1b7acf782b96dc46e3954bf6c4"/>
+		<Metadata name="CommonModule.СотрудникиРасширенный" id="296faa41-b104-4fdb-8d8b-de67e24044df" configVersion="26ba7dfb74e35ee1e45736c9e55d9b7c24e84c3f"/>
+		<Metadata name="CommonModule.СотрудникиРасширенный.Module" id="296faa41-b104-4fdb-8d8b-de67e24044df.0" configVersion="7c1e210c098364e1675177431d9edca43a0b0362"/>
+		<Metadata name="Configuration.ГС_Доработки" id="4eb0891d-5045-4a43-89a7-2ffc93b9cbaf" configVersion="26784d1c9c19b067eb95449e84fc9685c5089703"/>
 		<Metadata name="DataProcessor.ТекущиеДела" id="65e2b290-fa86-4f08-85bb-aa3d209bfc8d" configVersion="397ce151ab1451fe5ada3f6f994057b3fc60c5be"/>
 		<Metadata name="DataProcessor.ТекущиеДела.Form.Форма" id="b742ace2-7941-4a13-b70f-5a10dc658369" configVersion="dab17f3c406ba3eee677aede59bce7ee037e9c9c"/>
 		<Metadata name="DataProcessor.ТекущиеДела.Form.Форма.Form" id="b742ace2-7941-4a13-b70f-5a10dc658369.0" configVersion="31dc68341ea0c573c86875cb6480657f5cfec722"/>
 		<Metadata name="Document.НачислениеЗарплаты" id="e8819f90-0fc5-4685-a00f-979c2aad8bd5" configVersion="afdd5a66dc31a9b221ee5772a0d1c08883f9b23a"/>
 		<Metadata name="Document.НачислениеЗарплаты.Form.ФормаДокумента" id="7182d040-cda6-47ef-a106-263236d5b375" configVersion="273b695c63df16c3f42bde4bb52ffda82fcecd6a"/>
-		<Metadata name="Document.НачислениеЗарплаты.Form.ФормаДокумента.Form" id="7182d040-cda6-47ef-a106-263236d5b375.0" configVersion="b78d86192dff9c350acdf9a84642a1d74aaa56e5"/>
+		<Metadata name="Document.НачислениеЗарплаты.Form.ФормаДокумента.Form" id="7182d040-cda6-47ef-a106-263236d5b375.0" configVersion="c7289ec56b5168ad4e7fbf297cb6d5a484d40a51"/>
 		<Metadata name="Language.Русский" id="10fca307-b94f-4365-9d8e-11d9e26cd2b9" configVersion="809856b2de41acd53534f361e3e0bf481a86b334"/>
 		<Metadata name="Role.ГСД_ОсновнаяРоль" id="26e2cff8-4033-45f7-b068-6f4f4f4b6636" configVersion="c0f3ca26b341db9742709e14cef179b4f9cc4b91"/>
 		<Metadata name="StyleItem.ЦветНедоступногоТекста" id="22fc8a3d-b0a3-45a3-981e-d9c31b26448b" configVersion="f7d24c402e7005eb13418e04df48e8534afa79ca"/>
