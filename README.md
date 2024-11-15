@@ -8,3 +8,4 @@
 3. Включение в персональных настройках
 ![Включить фичи](https://github.com/vvyus/vvyus.github.io/blob/main/Screenshot%202024-11-14%20155516_1.png)
 
+![](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg)
