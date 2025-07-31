@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="46b3b306-6cb6-4cb8-bbf8-12b1df2c7a54" extendedConfigurationObject="1a62a3cf-e0be-4763-95ea-4d691293a1e0">
+  <producedTypes>
+    <objectType typeId="b465e53b-2771-45c9-a6e0-fde5a448490e" valueTypeId="4c0128c4-0e79-428d-ad07-6f3cd14d9b6d"/>
+    <refType typeId="17b9d23e-ab29-42f5-9549-643b978db7d2" valueTypeId="08561cb7-be99-41ff-a02b-f861158541fb"/>
+    <selectionType typeId="afcb7cbd-812a-477e-aa0f-fed04bdeb441" valueTypeId="405400b4-fac1-42c7-be38-e2bff624e58b"/>
+    <listType typeId="45d42674-7a9c-4819-82be-142c294d8de9" valueTypeId="9f50fc71-16fc-414a-b6f1-a65ceec66655"/>
+    <managerType typeId="0b7cd360-899c-4df9-91d8-bb09c83d246a" valueTypeId="f24b5e69-dc44-4f82-b06e-bf6ff91c9776"/>
+  </producedTypes>
+  <name>НачислениеЗаПервуюПоловинуМесяца</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <forms uuid="c1c1ae14-e7b5-4248-90a6-ef40194061e2" extendedConfigurationObject="ea155c64-880e-42ea-b76d-381c377784a5">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Document>
